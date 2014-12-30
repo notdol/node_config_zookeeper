@@ -42,4 +42,16 @@ C.on( 'configKey', function(data){
 });
 ```
 
+### LISTEN ALL CONFIGURATIONS ARE CHANGED
+
+```html
+C.onAll(function(key, data){
+	console.log(key); // key is 'configKey'
+    console.log(data);
+    // data.data1 -> value1
+    // data.data2 -> value2
+});
+```
+
+
 
